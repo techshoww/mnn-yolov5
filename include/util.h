@@ -1,27 +1,11 @@
 #ifndef UTIL_H
 #define UTIL_H 1
-
-
-//#include "opencv2/core/types.hpp"
 #include "opencv2/video/tracking.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
 using namespace std;
-//using namespace cv;
-
-typedef struct TrackingBox
-{
-	int frame;
-	int id;
-	int label;
-	float score;
-	cv::Rect_<float> box;
-}TrackingBox;
-
-
 
 double GetIOU(cv::Rect_<float> bb_test, cv::Rect_<float> bb_gt);
-
 
 #if 1
 

@@ -112,8 +112,6 @@ int main()
     std::string image_name = "000070.jpg";
     // load image
     cv::Mat raw_image    = cv::imread(image_name.c_str());
-    int raw_image_height = raw_image.rows;
-    int raw_image_width  = raw_image.cols; 
     cv::Mat image;
     cv::resize(raw_image, image, cv::Size(INPUT_SIZE, INPUT_SIZE));
     
